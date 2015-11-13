@@ -1,0 +1,25 @@
+
+import Foundation
+import SwiftyJSON
+
+private struct JSONKeys {
+
+{{#elements}}    static let {{.key}} = "{{.key}}"
+{{/elements}}
+}
+
+struct {{entityName}}: Parseable {
+
+    func parse<T where T : Model>(element: [String: AnyObject]) -> T {
+
+        let json = JSON(element)
+
+{{#elements}}        let {{.key}} = json[JSONKeys.{{.key}}]
+{{/elements}}
+
+        return {{destinationEntity}}(
+{{#elements}}           {{.key}}: {{.key}}{{^isLast}},{{/isLast}}
+{{/elements}}      ) as! T
+    }
+
+}

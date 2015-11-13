@@ -1,0 +1,10 @@
+PODS:
+  - GRMustache.swift (0.11.0)
+
+DEPENDENCIES:
+  - GRMustache.swift (~> 0.11)
+
+SPEC CHECKSUMS:
+  GRMustache.swift: 9d0eb125308a6a935169b5734a7ec460f561495e
+
+COCOAPODS: 0.39.0

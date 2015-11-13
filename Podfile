@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'Bigotes' do
+    pod 'GRMustache.swift', '~> 0.11'
+end
+
+target 'BigotesTests' do
+
+end
+

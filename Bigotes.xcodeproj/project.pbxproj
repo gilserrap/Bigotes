@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		417950591BF5F6680016F902 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417950581BF5F6680016F902 /* AppDelegate.swift */; };
+		4179505B1BF5F6680016F902 /* MustacheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4179505A1BF5F6680016F902 /* MustacheViewController.swift */; };
+		4179505E1BF5F6680016F902 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4179505C1BF5F6680016F902 /* Main.storyboard */; };
+		417950601BF5F6680016F902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4179505F1BF5F6680016F902 /* Assets.xcassets */; };
+		417950631BF5F6680016F902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417950611BF5F6680016F902 /* LaunchScreen.storyboard */; };
+		4179506E1BF5F6680016F902 /* BigotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4179506D1BF5F6680016F902 /* BigotesTests.swift */; };
+		4179507A1BF5F77B0016F902 /* bigote.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 417950791BF5F77B0016F902 /* bigote.mustache */; };
+		4179507D1BF5FAE10016F902 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4179507C1BF5FAE10016F902 /* Person.swift */; };
+		4179507F1BF5FB7D0016F902 /* parseable.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 4179507E1BF5FB7D0016F902 /* parseable.mustache */; };
+		417950821BF600320016F902 /* Person.json in Resources */ = {isa = PBXBuildFile; fileRef = 417950811BF600320016F902 /* Person.json */; };
+		417950861BF601330016F902 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417950851BF601330016F902 /* JSONLoader.swift */; };
+		417950891BF605390016F902 /* Bigotizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417950881BF605390016F902 /* Bigotizer.swift */; };
+		DFD10351EFE9A8C507A3BA7E /* Pods_Bigotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F500EB8392E4CDB09F20ED /* Pods_Bigotes.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4179506A1BF5F6680016F902 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4179504D1BF5F6680016F902 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 417950541BF5F6680016F902;
+			remoteInfo = Bigotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		417950551BF5F6680016F902 /* Bigotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bigotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		417950581BF5F6680016F902 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4179505A1BF5F6680016F902 /* MustacheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MustacheViewController.swift; sourceTree = "<group>"; };
+		4179505D1BF5F6680016F902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4179505F1BF5F6680016F902 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		417950621BF5F6680016F902 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		417950641BF5F6680016F902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		417950691BF5F6680016F902 /* BigotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4179506D1BF5F6680016F902 /* BigotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigotesTests.swift; sourceTree = "<group>"; };
+		4179506F1BF5F6680016F902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		417950791BF5F77B0016F902 /* bigote.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bigote.mustache; sourceTree = "<group>"; };
+		4179507C1BF5FAE10016F902 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		4179507E1BF5FB7D0016F902 /* parseable.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = parseable.mustache; sourceTree = "<group>"; };
+		417950811BF600320016F902 /* Person.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Person.json; sourceTree = "<group>"; };
+		417950851BF601330016F902 /* JSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		417950881BF605390016F902 /* Bigotizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bigotizer.swift; sourceTree = "<group>"; };
+		5D140FC015812FDDC4F4F93C /* Pods-Bigotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bigotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bigotes/Pods-Bigotes.release.xcconfig"; sourceTree = "<group>"; };
+		99CC0A3E09D6F71D276D0D33 /* Pods-Bigotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bigotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bigotes/Pods-Bigotes.debug.xcconfig"; sourceTree = "<group>"; };
+		E9F500EB8392E4CDB09F20ED /* Pods_Bigotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bigotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		417950521BF5F6680016F902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD10351EFE9A8C507A3BA7E /* Pods_Bigotes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		417950661BF5F6680016F902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4179504C1BF5F6680016F902 = {
+			isa = PBXGroup;
+			children = (
+				417950571BF5F6680016F902 /* Bigotes */,
+				4179506C1BF5F6680016F902 /* BigotesTests */,
+				417950561BF5F6680016F902 /* Products */,
+				CE7C8F1E9848ADE2DEA60B5B /* Pods */,
+				5B4BB7D7A261429DBFB1D94C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		417950561BF5F6680016F902 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				417950551BF5F6680016F902 /* Bigotes.app */,
+				417950691BF5F6680016F902 /* BigotesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		417950571BF5F6680016F902 /* Bigotes */ = {
+			isa = PBXGroup;
+			children = (
+				417950871BF6052B0016F902 /* Bigotizer */,
+				417950801BF5FB8D0016F902 /* JSONModels */,
+				417950581BF5F6680016F902 /* AppDelegate.swift */,
+				4179505A1BF5F6680016F902 /* MustacheViewController.swift */,
+				4179505C1BF5F6680016F902 /* Main.storyboard */,
+				4179505F1BF5F6680016F902 /* Assets.xcassets */,
+				417950611BF5F6680016F902 /* LaunchScreen.storyboard */,
+				417950641BF5F6680016F902 /* Info.plist */,
+				4179507C1BF5FAE10016F902 /* Person.swift */,
+				417950781BF5F7680016F902 /* Templates */,
+				417950831BF601330016F902 /* Utils */,
+			);
+			path = Bigotes;
+			sourceTree = "<group>";
+		};
+		4179506C1BF5F6680016F902 /* BigotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				4179506D1BF5F6680016F902 /* BigotesTests.swift */,
+				4179506F1BF5F6680016F902 /* Info.plist */,
+			);
+			path = BigotesTests;
+			sourceTree = "<group>";
+		};
+		417950781BF5F7680016F902 /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				417950791BF5F77B0016F902 /* bigote.mustache */,
+				4179507E1BF5FB7D0016F902 /* parseable.mustache */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
+		417950801BF5FB8D0016F902 /* JSONModels */ = {
+			isa = PBXGroup;
+			children = (
+				417950811BF600320016F902 /* Person.json */,
+			);
+			path = JSONModels;
+			sourceTree = "<group>";
+		};
+		417950831BF601330016F902 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				417950841BF601330016F902 /* JSONLoader */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		417950841BF601330016F902 /* JSONLoader */ = {
+			isa = PBXGroup;
+			children = (
+				417950851BF601330016F902 /* JSONLoader.swift */,
+			);
+			path = JSONLoader;
+			sourceTree = "<group>";
+		};
+		417950871BF6052B0016F902 /* Bigotizer */ = {
+			isa = PBXGroup;
+			children = (
+				417950881BF605390016F902 /* Bigotizer.swift */,
+			);
+			path = Bigotizer;
+			sourceTree = "<group>";
+		};
+		5B4BB7D7A261429DBFB1D94C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9F500EB8392E4CDB09F20ED /* Pods_Bigotes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE7C8F1E9848ADE2DEA60B5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99CC0A3E09D6F71D276D0D33 /* Pods-Bigotes.debug.xcconfig */,
+				5D140FC015812FDDC4F4F93C /* Pods-Bigotes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		417950541BF5F6680016F902 /* Bigotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 417950721BF5F6680016F902 /* Build configuration list for PBXNativeTarget "Bigotes" */;
+			buildPhases = (
+				CD1BB18245EFD55C3D9845DD /* Check Pods Manifest.lock */,
+				417950511BF5F6680016F902 /* Sources */,
+				417950521BF5F6680016F902 /* Frameworks */,
+				417950531BF5F6680016F902 /* Resources */,
+				70A0158379B7F3465853EF49 /* Embed Pods Frameworks */,
+				464888B32B797C67D56593FD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bigotes;
+			productName = Bigotes;
+			productReference = 417950551BF5F6680016F902 /* Bigotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		417950681BF5F6680016F902 /* BigotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 417950751BF5F6680016F902 /* Build configuration list for PBXNativeTarget "BigotesTests" */;
+			buildPhases = (
+				417950651BF5F6680016F902 /* Sources */,
+				417950661BF5F6680016F902 /* Frameworks */,
+				417950671BF5F6680016F902 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4179506B1BF5F6680016F902 /* PBXTargetDependency */,
+			);
+			name = BigotesTests;
+			productName = BigotesTests;
+			productReference = 417950691BF5F6680016F902 /* BigotesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4179504D1BF5F6680016F902 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = nil;
+				TargetAttributes = {
+					417950541BF5F6680016F902 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = A2X6Z5D4H7;
+					};
+					417950681BF5F6680016F902 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 417950541BF5F6680016F902;
+					};
+				};
+			};
+			buildConfigurationList = 417950501BF5F6680016F902 /* Build configuration list for PBXProject "Bigotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4179504C1BF5F6680016F902;
+			productRefGroup = 417950561BF5F6680016F902 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				417950541BF5F6680016F902 /* Bigotes */,
+				417950681BF5F6680016F902 /* BigotesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		417950531BF5F6680016F902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417950631BF5F6680016F902 /* LaunchScreen.storyboard in Resources */,
+				4179507F1BF5FB7D0016F902 /* parseable.mustache in Resources */,
+				417950821BF600320016F902 /* Person.json in Resources */,
+				4179507A1BF5F77B0016F902 /* bigote.mustache in Resources */,
+				417950601BF5F6680016F902 /* Assets.xcassets in Resources */,
+				4179505E1BF5F6680016F902 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		417950671BF5F6680016F902 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		464888B32B797C67D56593FD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bigotes/Pods-Bigotes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70A0158379B7F3465853EF49 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bigotes/Pods-Bigotes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD1BB18245EFD55C3D9845DD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		417950511BF5F6680016F902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417950891BF605390016F902 /* Bigotizer.swift in Sources */,
+				417950861BF601330016F902 /* JSONLoader.swift in Sources */,
+				4179507D1BF5FAE10016F902 /* Person.swift in Sources */,
+				4179505B1BF5F6680016F902 /* MustacheViewController.swift in Sources */,
+				417950591BF5F6680016F902 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		417950651BF5F6680016F902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4179506E1BF5F6680016F902 /* BigotesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4179506B1BF5F6680016F902 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 417950541BF5F6680016F902 /* Bigotes */;
+			targetProxy = 4179506A1BF5F6680016F902 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4179505C1BF5F6680016F902 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4179505D1BF5F6680016F902 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		417950611BF5F6680016F902 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				417950621BF5F6680016F902 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		417950701BF5F6680016F902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		417950711BF5F6680016F902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		417950731BF5F6680016F902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99CC0A3E09D6F71D276D0D33 /* Pods-Bigotes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Bigotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nil.Bigotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e820fd6b-e357-4e3e-b96d-304fcdc76616";
+			};
+			name = Debug;
+		};
+		417950741BF5F6680016F902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D140FC015812FDDC4F4F93C /* Pods-Bigotes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Bigotes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nil.Bigotes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e820fd6b-e357-4e3e-b96d-304fcdc76616";
+			};
+			name = Release;
+		};
+		417950761BF5F6680016F902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BigotesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nil.BigotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bigotes.app/Bigotes";
+			};
+			name = Debug;
+		};
+		417950771BF5F6680016F902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BigotesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nil.BigotesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bigotes.app/Bigotes";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		417950501BF5F6680016F902 /* Build configuration list for PBXProject "Bigotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				417950701BF5F6680016F902 /* Debug */,
+				417950711BF5F6680016F902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		417950721BF5F6680016F902 /* Build configuration list for PBXNativeTarget "Bigotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				417950731BF5F6680016F902 /* Debug */,
+				417950741BF5F6680016F902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		417950751BF5F6680016F902 /* Build configuration list for PBXNativeTarget "BigotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				417950761BF5F6680016F902 /* Debug */,
+				417950771BF5F6680016F902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4179504D1BF5F6680016F902 /* Project object */;
+}

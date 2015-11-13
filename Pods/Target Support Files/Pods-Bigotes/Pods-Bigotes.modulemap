@@ -1,0 +1,6 @@
+framework module Pods_Bigotes {
+  umbrella header "Pods-Bigotes-umbrella.h"
+
+  export *
+  module * { export * }
+}
