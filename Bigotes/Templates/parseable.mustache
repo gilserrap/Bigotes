@@ -14,7 +14,7 @@ struct {{entityName}}: Parseable {
 
         let json = JSON(element)
 
-{{#elements}}        let {{.key}} = json[JSONKeys.{{.key}}]
+{{#elements}}        let {{.key}} = json[JSONKeys.{{.key}}].<#valueType#>
 {{/elements}}
 
         return {{destinationEntity}}(

@@ -13,7 +13,6 @@
 		417950601BF5F6680016F902 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4179505F1BF5F6680016F902 /* Assets.xcassets */; };
 		417950631BF5F6680016F902 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417950611BF5F6680016F902 /* LaunchScreen.storyboard */; };
 		4179506E1BF5F6680016F902 /* BigotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4179506D1BF5F6680016F902 /* BigotesTests.swift */; };
-		4179507A1BF5F77B0016F902 /* bigote.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 417950791BF5F77B0016F902 /* bigote.mustache */; };
 		4179507D1BF5FAE10016F902 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4179507C1BF5FAE10016F902 /* Person.swift */; };
 		4179507F1BF5FB7D0016F902 /* parseable.mustache in Resources */ = {isa = PBXBuildFile; fileRef = 4179507E1BF5FB7D0016F902 /* parseable.mustache */; };
 		417950821BF600320016F902 /* Person.json in Resources */ = {isa = PBXBuildFile; fileRef = 417950811BF600320016F902 /* Person.json */; };
@@ -43,7 +42,6 @@
 		417950691BF5F6680016F902 /* BigotesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BigotesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4179506D1BF5F6680016F902 /* BigotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigotesTests.swift; sourceTree = "<group>"; };
 		4179506F1BF5F6680016F902 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		417950791BF5F77B0016F902 /* bigote.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bigote.mustache; sourceTree = "<group>"; };
 		4179507C1BF5FAE10016F902 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		4179507E1BF5FB7D0016F902 /* parseable.mustache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = parseable.mustache; sourceTree = "<group>"; };
 		417950811BF600320016F902 /* Person.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Person.json; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 		417950781BF5F7680016F902 /* Templates */ = {
 			isa = PBXGroup;
 			children = (
-				417950791BF5F77B0016F902 /* bigote.mustache */,
 				4179507E1BF5FB7D0016F902 /* parseable.mustache */,
 			);
 			path = Templates;
@@ -266,7 +263,6 @@
 				417950631BF5F6680016F902 /* LaunchScreen.storyboard in Resources */,
 				4179507F1BF5FB7D0016F902 /* parseable.mustache in Resources */,
 				417950821BF600320016F902 /* Person.json in Resources */,
-				4179507A1BF5F77B0016F902 /* bigote.mustache in Resources */,
 				417950601BF5F6680016F902 /* Assets.xcassets in Resources */,
 				4179505E1BF5F6680016F902 /* Main.storyboard in Resources */,
 			);
@@ -473,7 +469,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nil.Bigotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e820fd6b-e357-4e3e-b96d-304fcdc76616";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -487,7 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nil.Bigotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e820fd6b-e357-4e3e-b96d-304fcdc76616";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

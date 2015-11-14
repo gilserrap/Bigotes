@@ -10,28 +10,27 @@ struct Bigotizer {
         do {
             let template = try Template(named: defaultTemplateName)
             let jsonData = try JSONLoader.dictionaryFromFileNamed(jsonFile)
-            let jsonKeys = Array(jsonData.keys)
             
-            var elements = Array([])
+            var elements: [Dictionary<String, AnyObject>] = []
+            let lastKey = Array(jsonData.keys).last
             
-            for key in jsonKeys {
-                let isLast = (key == jsonKeys.last)
+            for (key, _) in jsonData {
+                let isLast = (key == lastKey)
                 elements.append(
                     [
                         "key": key,
-                        "valueType": "",
                         "isLast": isLast
                     ]
                 )
             }
             
-            let allKeys =
+            let data =
                 [
                     "elements":elements,
                     "entityName": mapperName,
                     "destinationEntity": destinationEntity
                 ]
-            let parsedTemplate = try template.render(Box(allKeys))
+            let parsedTemplate = try template.render(Box(data))
             
             save(parsedTemplate, named: mapperName)
             print(parsedTemplate)
