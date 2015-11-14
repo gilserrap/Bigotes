@@ -11,7 +11,7 @@ Better explain it in gifs:
 ![monete](Gif/monete.gif)
 
 ###This is what I want you to look like when writing a parser:
-![magic](Gif/Magic.gif)
+![magic](Gif/magic.gif)
 
 
 As the project grows more interesting I'll write something more specific.
